@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Hello() {
+        return <div>
+            <h1>Hello World in React</h1>
+            <h2>React é uma biblioteca JavaScript para construir interfaces de usuário. Saiba do que se trata o React em nossa página inicial ou no tutorial.</h2>
+            <a href="https://reactjs.org/tutorial/tutorial.html">Tutorial</a>
+            <h3>Se preferir usar seu próprio editor de texto, você também pode baixar o arquivo HTML abaixo, editá-lo e abri-lo a partir do sistema de arquivos local em seu navegador. Ele faz uma transformação de código de tempo de execução lenta, portanto, recomendamos usá-lo apenas para demonstrações simples.</h3>
+            <a href="https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html">Arquivo HTML/Modelo React.</a>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/270px-React-icon.svg.png"/>
+        </div>
+      }
+      ReactDOM.render(
+          <Hello/>,
+          document.getElementById('root')
+      );
+    </script>
+
+  </body>
+
+</html>
